@@ -144,10 +144,10 @@ input, textarea {
 
 HOME_PAGE = BASE_CSS + """
 <div class="container" style="text-align:center;">
-  <h1>🧩 Image Steganography</h1>
+  <h1> Image Steganography</h1>
   <p class="sub">Choose what you’d like to do</p>
   <a class="btn" href="{{ url_for('encode_page') }}">🔐 Encode Message</a>
-  <a class="btn" href="{{ url_for('decode_page') }}">🕵️‍♂️ Decode Message</a>
+  <a class="btn" href="{{ url_for('decode_page') }}"> Decode Message</a>
 </div>
 """
 
@@ -179,7 +179,7 @@ ENCODE_PAGE = BASE_CSS + """
 
 DECODE_PAGE = BASE_CSS + """
 <div class="container">
-  <h1>🕵️‍♂️ Decode Message</h1>
+  <h1> Decode Message</h1>
   <p class="sub">Upload a stego image to reveal its hidden message</p>
   {% if error %}
     <div class="error">{{ error }}</div>
